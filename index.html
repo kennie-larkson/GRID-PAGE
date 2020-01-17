@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GRID Powered Landing Page</title>
+    <style>
+        body{
+            font-family: sans-serif;
+
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            background: #abc;
+            grid-gap: 1em;
+            
+        }
+        .navbar{
+            grid-column: 1/4;
+            grid-row: 1/4;
+            background: #ddd;
+        }
+        .left-sidebar{
+            grid-auto-rows: minmax(100px, auto);
+            background: #ddd;
+
+        }
+        .mainbar{
+            
+            background: #ddd;
+
+        }
+        .right-sidebar{
+            
+            background: #ddd;
+
+        }
+        .footer{
+            grid-column: 1/4;
+            /*grid-row: 1/4; */
+            background: #ddd;
+
+        }
+        .grid-container > div{
+            padding: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+
+        <div class="navbar">NAVBAR</div>
+        <div class="left-sidebar">SIDEBAR</div>
+        <div class="mainbar">MAINBAR</div>
+        <div class="right-sidebar">SIDEBAR</div>
+        <div class="footer">FOOTER</div>
+
+    </div>
+    
+</body>
+</html>
