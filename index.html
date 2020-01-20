@@ -14,16 +14,18 @@
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
             background: #abc;
-            grid-gap: 1em;
+            grid-gap: 0.5em;
+            padding: 0.5em;
             
         }
         .navbar{
             grid-column: 1/4;
-            grid-row: 1/4;
+            /* grid-row: 1/4; */
             background: #ddd;
         }
         .left-sidebar{
-            grid-auto-rows: minmax(100px, auto);
+            grid-auto-rows: minmax(200px, auto); 
+           
             background: #ddd;
 
         }
@@ -45,6 +47,17 @@
         }
         .grid-container > div{
             padding: 1em;
+            border: #888 solid 1px;
+        }
+        /* .image{
+             width: 80px;
+            height: 80px; 
+            object-fit: cover;
+        } */
+        img{
+            transform: rotate(90deg);
+            /* height: 50px; */
+            /* border-radius: 10px; */
         }
 
     </style>
@@ -53,7 +66,12 @@
     <div class="grid-container">
 
         <div class="navbar">NAVBAR</div>
-        <div class="left-sidebar">SIDEBAR</div>
+        <div class="left-sidebar">
+            <div class="image">
+                <img src="./images/pic.jpg" alt="picture" width="150px" >
+            </div>
+            
+        </div>
         <div class="mainbar">MAINBAR</div>
         <div class="right-sidebar">SIDEBAR</div>
         <div class="footer">FOOTER</div>
