@@ -7,73 +7,78 @@
     <title>GRID Powered Landing Page</title>
     <style>
         body{
+            background-color: lightblue;
             font-family: sans-serif;
-
+            /* padding: 1em; */
         }
         .grid-container{
             display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
-            background: #abc;
-            grid-gap: 0.5em;
-            padding: 0.5em;
-            
+            grid-gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;  /* repeat(1fr, auto) */
+            padding: 1em;
         }
         .navbar{
             grid-column: 1/4;
-            /* grid-row: 1/4; */
-            background: #ddd;
+            grid-row: 1/6;
+            padding: 1em;
         }
+        
         .left-sidebar{
-            grid-auto-rows: minmax(200px, auto); 
-           
-            background: #ddd;
+            grid-column: 1/2;
+            /* grid-auto-rows: minmax(100px, auto); */
+            grid-row: 6/10;
+            padding: 1em;
+            text-align: justify;
 
         }
         .mainbar{
-            
-            background: #ddd;
-
+            grid-column: 2/4;
+            grid-row: 6/16;
+            padding: 1em;
+            text-align: center;
+           
         }
-        .right-sidebar{
-            
-            background: #ddd;
+         .right-sidebar{
+             padding: 1em;
+             text-align: justify;
+            /* grid-column: 4; */
+            /* grid-auto-rows: minmax(100px, auto); */
 
-        }
+         }  
         .footer{
             grid-column: 1/4;
-            /*grid-row: 1/4; */
-            background: #ddd;
-
-        }
-        .grid-container > div{
+            grid-auto-rows: minmax(100px, auto);
             padding: 1em;
-            border: #888 solid 1px;
         }
-        /* .image{
-             width: 80px;
-            height: 80px; 
-            object-fit: cover;
-        } */
-        img{
-            transform: rotate(90deg);
-            /* height: 50px; */
-            /* border-radius: 10px; */
+        .grid-container > div:nth-child(odd){
+            background-color: lightsalmon;
         }
-
+        .grid-container > div:nth-child(even){
+            background-color: lightpink;
+        }
     </style>
+    
+
+
 </head>
 <body>
     <div class="grid-container">
 
         <div class="navbar">NAVBAR</div>
-        <div class="left-sidebar">
-            <div class="image">
-                <img src="./images/pic.jpg" alt="picture" width="150px" >
-            </div>
-            
+        <div class="sidebar left-sidebar">LEFTSIDEBAR <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
         </div>
-        <div class="mainbar">MAINBAR</div>
-        <div class="right-sidebar">SIDEBAR</div>
+        <div class="mainbar">MAINBAR <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel quae, aliquid obcaecati itaque fuga velit corporis rerum sint error, ab dignissimos necessitatibus eum, dolorem a debitis nulla veniam. Ab doloribus assumenda magni quos eum sint? Adipisci tempora quaerat sunt blanditiis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
+        </div>
+        <div class="sidebar right-sidebar">RIGHTSIDEBAR <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
+        </div>
         <div class="footer">FOOTER</div>
 
     </div>
