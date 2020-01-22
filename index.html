@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GRID Powered Landing Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         body{
-            background-color: lightblue;
+            background-color: lightgray;
             font-family: sans-serif;
             /* padding: 1em; */
         }
@@ -17,7 +18,7 @@
             grid-gap: 10px;
             grid-template-columns: 1fr 1fr 1fr;  /* repeat(1fr, auto) */
             padding: 1em;
-            background-color: #666;
+            /* background-color: #666; */
             
         }
         .navbar{
@@ -38,7 +39,7 @@
         }
         .mainbar{
             grid-column: 2/4;
-            grid-row: 6/16;
+            grid-row: 6/10;
             padding: 1em;
             text-align: center;
             border-radius: 5px;
@@ -48,7 +49,7 @@
              padding: 1em;
              text-align: justify;
              border-radius: 5px;
-            /* grid-column: 4; */
+             grid-column: 1/4; 
             /* grid-auto-rows: minmax(100px, auto); */
 
          }  
@@ -70,19 +71,28 @@
 
 </head>
 <body>
-    <div class="grid-container">
+    <div class= " container grid-container">
 
-        <div class="navbar">NAVBAR</div>
-        <div class="sidebar left-sidebar">LEFTSIDEBAR <br>
+        <div class="navbar">
+        <p>
+            <h1>
+                Layout Powered by 
+                <small class="text-muted">CSS GRID</small>
+              </h1>
+        </p>
+        </div>
+        <div class=" sidebar left-sidebar">LEFTSIDEBAR <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
         </div>
-        <div class="mainbar">MAINBAR <br>
+        <div class="mainbar"><h3 class="text-muted">MAINBAR</h3> <br>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel quae, aliquid obcaecati itaque fuga velit corporis rerum sint error, ab dignissimos necessitatibus eum, dolorem a debitis nulla veniam. Ab doloribus assumenda magni quos eum sint? Adipisci tempora quaerat sunt blanditiis.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
+            
         </div>
         <div class="sidebar right-sidebar">RIGHTSIDEBAR <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quod harum aperiam fugit quae earum velit error odit! Ex, consequatur. Asperiores, quam doloremque, quisquam ex culpa amet architecto distinctio magni voluptates cumque, aliquam aperiam! Repellendus, esse eligendi nam aperiam, reprehenderit, earum maxime necessitatibus incidunt quasi unde iure laborum eum debitis ducimus labore facilis a illo? Dignissimos natus ipsam, consectetur odio deleniti ipsum, reprehenderit nostrum iste molestias asperiores impedit id fugiat ab magnam quod iusto officia nesciunt placeat facere! Tenetur, perspiciatis?</p>
