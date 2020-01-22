@@ -16,11 +16,14 @@
             grid-gap: 10px;
             grid-template-columns: 1fr 1fr 1fr;  /* repeat(1fr, auto) */
             padding: 1em;
+            background-color: #666;
+            
         }
         .navbar{
             grid-column: 1/4;
             grid-row: 1/6;
             padding: 1em;
+            border-radius: 5px;
         }
         
         .left-sidebar{
@@ -29,6 +32,7 @@
             grid-row: 6/10;
             padding: 1em;
             text-align: justify;
+            border-radius: 5px;
 
         }
         .mainbar{
@@ -36,11 +40,13 @@
             grid-row: 6/16;
             padding: 1em;
             text-align: center;
+            border-radius: 5px;
            
         }
          .right-sidebar{
              padding: 1em;
              text-align: justify;
+             border-radius: 5px;
             /* grid-column: 4; */
             /* grid-auto-rows: minmax(100px, auto); */
 
@@ -49,6 +55,7 @@
             grid-column: 1/4;
             grid-auto-rows: minmax(100px, auto);
             padding: 1em;
+            border-radius: 5px;
         }
         .grid-container > div:nth-child(odd){
             background-color: lightsalmon;
